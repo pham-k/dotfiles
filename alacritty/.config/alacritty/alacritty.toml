@@ -1,0 +1,74 @@
+import = [
+    "~/dotfiles/alacritty/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+]
+
+[window]
+padding.x = 24
+padding.y = 24
+position.x = 0
+position.y = 0
+dimensions.columns = 156
+dimensions.lines = 48
+decorations = "Buttonless"
+opacity = 0.84
+blur = true
+startup_mode = "Windowed"
+option_as_alt = "Both"
+dynamic_title = true
+
+[keyboard]
+bindings = [
+  { key = "Right", mods = "Alt", chars = "\u001BF" },
+  { key = "Left",  mods = "Alt", chars = "\u001BB" },
+]
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[cursor]
+blink_interval = 500
+blink_timeout = 5
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Off"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 18
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrains Mono"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[mouse]
+hide_when_typing = true
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
