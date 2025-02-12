@@ -1,3 +1,12 @@
+# User specific aliases and functions
+if [ -d ~/.zshrc.d ]; then
+    for rc in ~/.zshrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -23,10 +32,10 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 # Add in zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
+# zinit light zsh-users/zsh-syntax-highlighting
+# zinit light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-autosuggestions
+# zinit light Aloxaf/fzf-tab
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -65,65 +74,11 @@ setopt hist_find_no_dups
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
-zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+# zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
+# zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Shell integrations
 eval "$(oh-my-posh init zsh --config ~/poshthemes/spaceship.omp.json)"
 eval "$(rbenv init - zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-
-# User specific aliases and functions
-if [ -d ~/.zshrc.d ]; then
-    for rc in ~/.zshrc.d/*; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
-fi
-unset rc
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-eval "$(pyenv init -)"
-
-# dvm
-if [[ -f ~/.dvm/scripts/dvm ]]; then
-  . ~/.dvm/scripts/dvm
-fi
-
-# conda
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/khuong.pham/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/khuong.pham/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/khuong.pham/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/khuong.pham/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
-# !! THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# pyenv-virtualenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-# Google Cloud SDK.
-if [ -f '/Users/khuong.pham/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/khuong.pham/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# Shell command completion for gcloud.
-if [ -f '/Users/khuong.pham/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/khuong.pham/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

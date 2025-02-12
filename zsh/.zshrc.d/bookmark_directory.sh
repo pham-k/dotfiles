@@ -1,6 +1,1 @@
-export dotfiles="/Users/khuong.pham/dotfiles"
-export dw="/Users/khuong.pham/Documents/working/vidiva/divawallet"
-export dwci="/Users/khuong.pham/Documents/working/vidiva/divawallet-ci"
-export pk="/Users/khuong.pham/Documents/working/vidiva/paykit"
-export pk="/Users/khuong.pham/Documents/working/vidiva/paykit-ci"
-export aka="/Users/khuong.pham/Documents/working/akasha"
+export dotfiles="$HOME/dotfiles"
