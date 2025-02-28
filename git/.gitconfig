@@ -1,4 +1,6 @@
 [user]
-    name = pham-k
+    name = Pham Khuong
     email = pham.k@protonmail.com
 
+[init]
+	defaultBranch = master

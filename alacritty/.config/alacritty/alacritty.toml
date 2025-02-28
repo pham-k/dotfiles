@@ -7,8 +7,8 @@ position.y = 0
 dimensions.columns = 156
 dimensions.lines = 48
 decorations = "Buttonless"
-opacity = 0.84
-blur = true
+opacity = 1
+blur = false
 startup_mode = "Windowed"
 option_as_alt = "Both"
 dynamic_title = true
@@ -39,7 +39,7 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [font]
-size = 18
+size = 16
 
 [font.bold]
 family = "JetBrains Mono"
@@ -72,5 +72,5 @@ semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [general]
 import = [
-    "~/dotfiles/alacritty/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+    "~/dotfiles/alacritty/.config/alacritty/catppuccin_mocha.toml"
 ]
