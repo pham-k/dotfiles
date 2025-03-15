@@ -1,1 +1,2 @@
-export dotfiles="$HOME/dotfiles"
+export dot="$HOME/dotfiles"
+export ars="$Home/Documents/project/ars"
