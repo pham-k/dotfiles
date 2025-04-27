@@ -78,7 +78,12 @@ zstyle ':completion:*' menu no
 # zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Shell integrations
+eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(oh-my-posh init zsh --config ~/poshthemes/spaceship.omp.json)"
 eval "$(rbenv init - zsh)"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
