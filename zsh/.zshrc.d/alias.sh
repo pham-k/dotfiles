@@ -8,10 +8,16 @@ alias cp='cp -i '
 alias mv='mv -i '
 
 # Git
-alias gco='git checkout '
-alias gcb='git checkout -b '
+alias gco='git checkout'
+alias ga='git add'
+alias gc='git commit'
 alias gl='git log --pretty="format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar" --date=short --graph --all'
 alias gs='git status'
+
+# Tmux
+alias ta='tmux attach'
+alias tl='tmux list-sessions'
+alias tn='tmux new-session -s'
 
 # Ctrl + C and Ctrl + V utility
 # Credits: https://dev.to/djviolin/what-are-your-unix-pipeline-commands-that-saved-you-from-lot-of-codingtime-7ok/comments/185j
