@@ -27,3 +27,13 @@ alias tn='tmux new-session -s'
 #   ctrlv >> some_file
 alias ctrlc='xclip -selection clipboard -i'
 alias ctrlv='xclip -selection clipboard -o'
+
+# tldr
+alias tldr='tldr --color always'
+
+# Gemini
+alias gemini='NO_COLOR= gemini'
+
+# Claude
+alias claude='FORCE_COLOR=1 claude --model claude-haiku-4-5-20251001'
+

@@ -8,3 +8,10 @@ __pycache__/
 
 # Node specifig
 node_modules/
+**/.claude/settings.local.json
+**/.eh-claude-code/
+**/.serena/cache/
+**/.serena/memories/
+**/.serena/
+.claude/auto-context.md
+**/.claude/auto-context.md

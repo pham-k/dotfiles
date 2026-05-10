@@ -13,6 +13,16 @@ export PATH="/opt/flutter_3.2.9/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
 export PATH="/opt/etcd/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+# export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@15/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@15/lib/pkgconfig"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/.eh-dev/bin:$PATH"
 
 #######################################
 # Homebrew
