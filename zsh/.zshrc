@@ -80,13 +80,13 @@ fi
 # =========================================================
 
 local tools=(
-    brew
+    # brew
     omp
     zoxide
     fzf
     nvm
-    rbenv
-    pyenv
+    # rbenv
+    # pyenv
     bun
     postgres
 )
