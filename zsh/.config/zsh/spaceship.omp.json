@@ -11,21 +11,21 @@
           "type": "session"
         },
         {
-          "foreground": "blue",
+          "foreground": "green",
           "options": {
             "style": "folder"
           },
           "style": "plain",
-          "template": "<black>in</> {{ .Path }} ",
+          "template": "<default>in</> {{ .Path }} ",
           "type": "path"
         },
         {
           "foreground": "red",
           "options": {
-            "branch_icon": " <red><b>\ue0a0 </b></>"
+            "branch_icon": "<red><b>\ue0a0 </b></>"
           },
           "style": "plain",
-          "template": "<black>on</> {{ .HEAD }}",
+          "template": "<default>on</> {{ .HEAD }}",
           "type": "git"
         }
       ],
@@ -36,9 +36,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "green",
+          "foreground": "default",
           "style": "plain",
-          "template": "\u276f",
+          "template": ">",
           "type": "text"
         }
       ],
