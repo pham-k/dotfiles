@@ -18,6 +18,7 @@ typeset -U PATH path
 
 # Personal binaries/scripts
 export GOPATH="$HOME/go"
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$GOPATH/bin:$PATH"

@@ -36,9 +36,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "default",
+          "foreground": "green",
           "style": "plain",
-          "template": ">",
+          "template": "\u276f",
           "type": "text"
         }
       ],

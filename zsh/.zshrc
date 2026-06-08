@@ -85,12 +85,15 @@ local tools=(
     zoxide
     fzf
     nvm
-    # rbenv
+    rbenv
     # pyenv
     bun
     postgres
+    gvm
 )
 
 for tool in $tools; do
     [[ -f "$XDG_CONFIG_HOME/zsh/${tool}.zsh" ]] && source "$XDG_CONFIG_HOME/zsh/${tool}.zsh"
 done
+export PATH="/Users/phamk/.gvm/go/bin:$PATH"
+export PATH="/Users/phamk/.gvm/tools-bin:$PATH"
